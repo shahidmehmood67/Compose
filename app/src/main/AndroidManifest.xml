@@ -13,9 +13,10 @@
         android:theme="@style/Theme.DemoComposeApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivityXml"
+            android:name=".SettingsActivity"
             android:exported="true"
-            android:theme="@style/Theme.DemoXmlApplication">
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.DemoComposeApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,15 +24,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityXml"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.DemoComposeApplication">
+            android:theme="@style/Theme.DemoXmlApplication">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DemoComposeApplication">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
